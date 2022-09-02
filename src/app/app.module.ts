@@ -3,14 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+
+import { VideosComponent } from './videos/videos.component';
+import { PeopleComponent } from './people/people.component';
+import { DocumentsComponent } from './documents/documents.component';
+import { EventsComponent } from './events/events.component';
+import { CommunitiesComponent } from './communities/communities.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { ChannelsComponent } from './channels/channels.component';
+import { ActivityComponent } from './activity/activity.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VideosComponent,
+    PeopleComponent,
+    DocumentsComponent,
+    EventsComponent,
+    CommunitiesComponent,
+    FavoritesComponent,
+    ChannelsComponent,
+    ActivityComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
