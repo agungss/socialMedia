@@ -1,0 +1,32 @@
+<div class="col-12">
+  <cdk-virtual-scroll-viewport itemSize="200" minBufferPx="1000" maxBufferPx="1400" class="example-viewport">
+    <div *cdkVirtualFor="let activity of activity2" class="example-item">
+      <div fxLayout="row">
+        <mat-card class="example-card">
+          <img src="https://picsum.photos/70" alt="">
+          <mat-card-content>
+            <h3>{{ activity.name }}</h3>
+            <p>{{ activity.body }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>
+
+
+
+
+<!-- <div class="card" *ngFor="let activity of activity2">
+  <div class="card-body {height:50vh;}">
+    <div class="row">
+      <div class="col-3">
+        <img src="https://picsum.photos/60" alt="">
+      </div>
+      <div class="col-9">
+        <h3><b>{{ activity.name }}</b></h3>
+        <p>{{ activity.body }}</p>
+      </div>
+    </div>
+  </div>
+</div> -->

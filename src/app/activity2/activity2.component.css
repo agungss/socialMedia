@@ -1,0 +1,32 @@
+
+
+.example-card {
+  margin: 1px;
+  width: calc(100% - 0px);   height: calc(100% - 0px);
+}
+
+.example-viewport {
+  height: 63vh;
+  width: 375px;
+  border: 1px solid grey;
+}
+
+.example-item {
+  height: fit-content;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid maroon;
+  box-sizing: border-box;
+
+  height: fit-content;
+
+
+}
+
+.example-item-detail {
+  height: 18px;
+}

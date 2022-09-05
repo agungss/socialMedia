@@ -1,0 +1,22 @@
+.example-viewport {
+
+  height: 63vh;
+  width: 375px;
+  border: 1px solid black;
+
+}
+
+.example-item {
+  height: fit-content;
+}
+
+
+.channel-img {
+  margin: 10px auto; /* 10px top & bottom, auto for left and right */
+  width: 100%;
+}
+
+.example-card {
+  margin: 1px;
+  width: calc(100% - 0px);   height: calc(100% - 0px);
+}

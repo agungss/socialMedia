@@ -1,1 +1,46 @@
-<p>channels works!</p>
+<!-- <div class="card">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          Google
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          Dribble
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<cdk-virtual-scroll-viewport itemSize="200" minBufferPx="1000" maxBufferPx="1400" class="example-viewport">
+  <div *cdkVirtualFor="let channel of channels" class="example-item">
+    <div class="row col-12">
+      <mat-card class="example-card">
+        <img mat-card-sm-image src="{{ channel.url }}" alt="random_pic">
+        <p>{{ channel.title }}</p>
+      </mat-card>
+    </div>
+  </div>
+</cdk-virtual-scroll-viewport>
+<hr/>
+
+<!--
+<div class="card" *ngFor="let channel of channels">
+  <div class="card-body">
+    <h3>
+
+    </h3>
+  </div>
+</div> -->
+
+
+<!-- <img src="{{ channel.url }}" alt="">
+    <p>{{ channel.title }}</p> -->

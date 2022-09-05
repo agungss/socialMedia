@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ChannelService } from '../services/channel.service';
+
+import { Channel } from '../models/Channel';
 
 @Component({
   selector: 'app-channels',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./channels.component.css']
 })
 export class ChannelsComponent implements OnInit {
+  channels: Channel[] | undefined;
 
-  constructor() { }
+  constructor(private channelService: ChannelService) { }
 
   ngOnInit(): void {
+    this.channelService.getChannels().subscribe(channels => {
+      this.channels = channels;
+    });
   }
 
 }
