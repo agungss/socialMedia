@@ -29,6 +29,11 @@ import { Activity2Service } from './services/activity2.service';
 import { Activity2Component } from './activity2/activity2.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SocmedComponent } from './socmed/socmed.component';
+import { AppNavigationComponent } from './app-navigation/app-navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -44,7 +49,8 @@ import { SocmedComponent } from './socmed/socmed.component';
     NavbarComponent,
     TestComponent,
     Activity2Component,
-    SocmedComponent
+    SocmedComponent,
+    AppNavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +60,11 @@ import { SocmedComponent } from './socmed/socmed.component';
     MatCardModule,
     MatIconModule,
     HttpClientModule,
-    ScrollingModule
+    ScrollingModule,
+    LayoutModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [UserService, Activity2Service, ChannelService],
   bootstrap: [AppComponent]
